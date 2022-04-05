@@ -39,7 +39,9 @@ table{
     margin-left: 12px;
     table-layout: fixed
 }
-
+td{
+    padding-left: 9px;
+}
 td:nth-child(1), th:nth-child(1) {
     color:red;
 }
