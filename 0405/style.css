@@ -1,0 +1,51 @@
+html{
+    width: 1000px;
+}
+h1{
+    position: relative;
+    margin: 20px;
+    font-size: 6rem;
+    color: red;    
+}
+
+caption{
+    font-style: normal;
+    font-weight:bolder;
+    font-size: 2em;
+}
+blockquote{
+ margin: 80px 0 0 0;
+}
+
+cite{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkgray;
+}
+
+cite:nth-child(2){
+    padding-left: 20px;
+}
+table{
+    height: 240px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+td:nth-child(1), th:nth-child(1) {
+    color:red;
+}
+
+.holiday{
+    color: red;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.space{
+    width: 5px;
+}
