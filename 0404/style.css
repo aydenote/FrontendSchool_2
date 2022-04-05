@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 html,body{
+    position: relative;
+    height: 1000px;
     background-color: #fce4ec;
     
 }
