@@ -2,6 +2,11 @@ html{
     width: 1000px;
     margin: auto;
 }
+
+body{
+    margin: 0;
+}
+
 h1{
     position: relative;
     margin: 20px;
@@ -31,7 +36,8 @@ cite:nth-child(2){
 table{
     height: 240px;
     display: inline-block;
-    margin-left: 16px;
+    margin-left: 12px;
+    table-layout: fixed
 }
 
 td:nth-child(1), th:nth-child(1) {
@@ -47,6 +53,6 @@ td:nth-child(1), th:nth-child(1) {
     justify-content: space-between;
 }
 
-.space{
+/* .space{
     width: 5px;
-}
+} */
