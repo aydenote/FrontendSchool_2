@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    height: 100vh;
+    background-image: url(/images/약관동의.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+p{
+    font-style: italic;
+}
+
+h1{
+    font-size: 30px;
+}
+h1, h3{
+    margin: 10px 0 0 0;
+    float: left;
+}
+
+h3{
+    font-size: 14px;
+    color: gray;
+}
+
+
+header{
+    margin: auto;
+}
+
+.container{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 25px;
+}
+.header_img{
+    float: left;
+    border-radius: 50%;
+    
+}
+
+.Tos{
+    margin-top: 120px;
+}
+
+.checkbox_form{
+    font-weight: 600;
+    
+}
+.checkbox{
+    border-radius: 30px;
+    vertical-align: -2px;
+}
+.submit_btn{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.decline_btn{
+    border: 2px solid skyblue;
+    background-color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    
+}
+.decline_btn:hover{
+    background-color: skyblue;
+    cursor: pointer;
+}
+.accept_btn{
+    border: 2px solid skyblue;
+    background-color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+.accept_btn:hover{
+    background-color: skyblue;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 30px;
+}

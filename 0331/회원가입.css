@@ -1,0 +1,76 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/lion_회원가입_resize.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+h3{
+    font-size: 12px;
+    color: gray;
+}
+
+section{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 100%;
+    text-align: start;
+    padding: 10% 0 0 10%;
+}
+input{
+    display: block;
+    margin: 20px 0;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+
+.container{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 0px 16px -2px #000000;
+}
+.checkbox{
+    display: inline;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    vertical-align: -1px;
+}
+
+.creat_btn{
+    display: block;
+    width: 80%;
+    height: 50px;
+    background-color: #5f5fc4;
+    margin-top: 50px;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+}
