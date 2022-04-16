@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Box</title>
+    <link rel="stylesheet" href="dropdown.css" />
+  </head>
+  <body>
+    <article class="single">
+      <p class="title">최애 프로그래밍 언어</p>
+      <img class="downImg" src="icon-Triangle-down.png" alt="dropdown" />
+    </article>
+    <ul class="option">
+      <li class="language">Python</li>
+      <li class="language">Java</li>
+      <li class="language">JavaScript</li>
+      <li class="language">C#</li>
+      <li class="language">C/C++</li>
+    </ul>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let flag = 0;
+      $(".downImg").click(function () {
+        if (flag === 0) {
+          $(".single").css({ border: "1px solid #9B51E0" });
+          $(".downImg").attr("src", "icon-Triangle-up.png");
+          $(".option").fadeIn();
+          flag = 1;
+        } else {
+          $(".single").css({ border: "1px solid #C4C4C4" });
+          $(".downImg").attr("src", "icon-Triangle-down.png");
+          $(".option").fadeOut();
+          flag = 0;
+        }
+      });
+    </script>
+  </body>
+</html>

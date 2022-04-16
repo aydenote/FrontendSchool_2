@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h1{
+    display: inline;
+    width: 215px;
+    height: 15px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin: 0 0 15px 0;
+}
+.loginContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 140px;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 18px;
+}
+
+.loginBtn{
+    width: 318px;
+    height: 40px;
+    background: #711BFF;
+    border-radius: 4px;
+    color: white; 
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    
+}
+.loginBtn img{
+    vertical-align: bottom;
+}
+
+.findIdPw{
+    float: left;
+    
+}
+
+.signup{
+    float: right;
+}
+
+.idPw{
+    display: inline;
+    width: 34px;
+    height: 15px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    vertical-align: text-top;
+    color: #767676;
+}
+.idPwImg{
+    vertical-align: top;
+}
