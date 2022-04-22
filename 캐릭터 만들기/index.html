@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>노루? 고라니? 캐릭터</title>
+    <title>노루? 고라니? 루돌프? 캐릭터</title>
     <style>
       @keyframes 왼쪽귀 {
         from {
@@ -23,33 +23,38 @@
         }
       }
       @keyframes 왼쪽눈 {
-        from {
-        }
-        to {
+        100% {
           transform: scale(1.5);
         }
       }
       @keyframes 오른쪽눈 {
-        from {
-        }
-        to {
+        100% {
           transform: scale(1.5);
         }
       }
+
       body {
         background-color: darkgoldenrod;
       }
+      .face {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        width: 300px;
+        height: 300px;
+        background-color: RGB(207, 143, 82);
+        border-radius: 50% 50% 100px 100px;
+      }
       .ear-left {
         position: absolute;
-        top: 160px;
-        left: 380px;
+        top: -30px;
+        left: -130px;
         width: 200px;
         height: 80px;
         border-radius: 9% 91% 26% 74% / 11% 69% 31% 89%;
         background-color: RGB(207, 143, 82);
-        transform: rotate(30deg);
-        z-index: -1;
         animation: 왼쪽귀 0.5s infinite alternate;
+        z-index: -1;
       }
       .ear-line-left {
         position: absolute;
@@ -73,14 +78,13 @@
 
       .ear-right {
         position: absolute;
-        top: 160px;
-        left: 730px;
+        top: -30px;
+        left: 220px;
         width: 200px;
         height: 80px;
         border-radius: 9% 91% 26% 74% / 11% 69% 31% 89%;
         background-color: RGB(207, 143, 82);
         z-index: -1;
-        transform: rotate(-30deg) scaleX(-1);
         animation: 오른쪽귀 0.5s infinite alternate;
       }
       .ear-line-right {
@@ -102,15 +106,17 @@
         background-color: RGB(255, 164, 159);
         transform: rotate(-15deg);
       }
-      .face {
+      .face:hover::after {
+        content: "";
+        width: 42px;
+        height: 42px;
         position: absolute;
-        margin-top: 200px;
-        margin-left: 500px;
-        width: 300px;
-        height: 300px;
-        background-color: RGB(207, 143, 82);
-        border-radius: 50% 50% 100px 100px;
+        background-color: red;
+        top: 64%;
+        left: 43%;
+        border-radius: 50%;
       }
+
       .eye-left {
         position: absolute;
         top: 120px;
@@ -193,23 +199,21 @@
         border-radius: 50%;
         transform: rotate(30deg);
       }
-      .mouth-ani {
-        /* display: none; */
-      }
     </style>
   </head>
   <body>
-    <div class="ear-left">
-      <div class="ear-line-left">
-        <div class="ear-inline-left"></div>
-      </div>
-    </div>
-    <div class="ear-right">
-      <div class="ear-line-right">
-        <div class="ear-inline-right"></div>
-      </div>
-    </div>
     <div class="face">
+      <div class="ear-left">
+        <div class="ear-line-left">
+          <div class="ear-inline-left"></div>
+        </div>
+      </div>
+
+      <div class="ear-right">
+        <div class="ear-line-right">
+          <div class="ear-inline-right"></div>
+        </div>
+      </div>
       <div class="eye-left">
         <div class="eyeball-left"></div>
       </div>
@@ -220,7 +224,6 @@
         <div class="nose"></div>
         <div class="mouth-left"></div>
         <div class="mouth-right"></div>
-        <div class="mouth-ani"></div>
       </div>
     </div>
   </body>

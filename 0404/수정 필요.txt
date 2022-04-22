@@ -1,0 +1,4 @@
+div 요소를 absolute으로 설정하니까.
+html height 값이 0이 됨
+: 해결 방안 찾아야 됨
+: html height 를 1000px 줌
