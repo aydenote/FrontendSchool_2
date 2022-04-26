@@ -1,0 +1,38 @@
+.con-main{
+    height: auto;
+    background-color: #333;
+}
+.con-history{
+    width: 400px;
+    border-radius: 10px;
+    background-color: gray;
+    .img-photoshop{
+        width: 70px;
+        height: 70px;
+        margin-top: -40px;
+    }
+}
+
+article:nth-child(odd){
+    margin-right: auto;
+}
+
+article:nth-child(even){
+    margin-left: auto;
+    .img-photoshop{
+        margin-left: auto;
+    }
+}
+
+@for $photo from 1 through 9 {
+    article:nth-child(#{$photo}) .img-photoshop{
+        background : {
+        image: url("../images/#{$photo}.png");
+        position: top;
+        repeat: no-repeat;
+        size: contain;
+        } 
+        margin-top: -0px;
+    }
+}
+    
