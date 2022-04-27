@@ -1,0 +1,73 @@
+body{
+  background-color: #616161;
+}
+.con-title {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/cover.png");
+  background-position: bottom;
+}
+.con-title .txt-title{
+  position: absolute;
+  left:40%;
+  bottom: 0;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.con-title .txt-title strong{
+  letter-spacing: 10px;  
+}
+.wrap-main{
+  display: flex;
+}
+.con-left{
+  margin-left: auto;
+}
+.con-right{
+  margin-right: auto;
+}
+
+.img-history{
+  width: 50px;
+  margin-top: -25px;
+}
+
+.con-left .img-history{
+  margin-left: 10px;
+}
+
+.con-right .img-history{
+  float: right;
+  margin-right: 10px;
+}
+
+.wrap-history{
+  margin-top: 30px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.txt-year{
+  font-size: 2.5rem;
+  color: #5e92f3;
+  font-weight: bolder;
+}
+
+.con-left .txt-year{
+  text-align: right;
+}
+.con-right .txt-year{
+  padding-top: 20px;
+}
+
+.txt-version{
+  font-size: 14px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.con-left .txt-version{
+  text-align: right;
+}
