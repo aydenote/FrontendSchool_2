@@ -1,0 +1,153 @@
+.con-main{
+    width: 1060px;
+    height: 1170px;
+    margin: 86px auto;
+    border-radius: 15px;
+    border: 2px solid #BDBDBD;
+    background-color: #F2F2F2;
+}
+
+.con-list{
+    font-size: 0;
+    width: 1003px;
+    background: #FFFFFF;
+    margin: auto;
+    border: 2px solid #BDBDBD;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    .con-moviInfo{
+        padding: 19px 20px;
+    }
+    .list-movie{
+        display: inline-block;
+        width: 220px;
+        margin-left: 23px;
+        margin-top: 26px;
+        border-radius: 10px;
+        border: 1px solid #BDBDBD;
+    .img-movie{
+        width: 180px;
+        border: 1px solid #BDBDBD;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        }
+    }
+}
+
+.con-movieInfo{margin-top: 11px;}
+    
+.txt-movieTitle{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style:normal;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.txt-genre{
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.txt-genre::before{
+    content: "개요 ";
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #828282;
+}
+.txt-rating{
+    float: right;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    background: { 
+        image:url("../image/Star.png");
+        repeat:no-repeat;
+        position: center center;
+    }
+}
+.txt-rating::before{
+    content: "평점";
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-right: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #828282;  
+}
+
+.txt-releaseDate{
+    margin-top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.txt-releaseDate::before{
+    content: "개봉 ";
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #828282;  
+}
+.txt-cast{
+    margin-top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.txt-cast::before{
+    content: "출연 ";
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #828282;  
+}
+
+.con-link{
+    display: flex;
+    width: 220px;
+    height: 41px;    
+    line-height: 41px;
+    text-align: center;
+    border: 1px solid #c4c4c4;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    background: #F2F2F2;
+    
+}
+
+.link-ticketing{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.link-trailer{
+    flex-grow: 1;
+    flex-basis: 0;
+    border-left: 1px solid #BDBDBD;
+    background: {
+        image: url("../image/아이콘_재생.png");
+        size: 16px 16px;
+        repeat: no-repeat;
+        position: 15px center;
+    }
+}

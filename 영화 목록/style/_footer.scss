@@ -1,0 +1,81 @@
+.con-footer{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 53px 0 38px 0px;
+}
+
+.con-companyInfo{
+    margin: auto;
+    width: 60%;
+    
+}
+.wrap-company{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 42px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.txt-companyName{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.link-img{
+    width: 24px;
+    height: 24px;
+    margin-left: 24px;
+}
+
+span{
+    float: right;
+    margin-top: 36px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+
+.txt-company{
+    display: inline-block;
+    margin-top: 36px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+
+.txt-company::after{
+    content: " |";
+}
+
+.txt-company.name{
+    color: black;
+}
+
+.txt-company.ceo::before{
+    content: "대표 ";
+    color: black;
+}
+
+.txt-company.businessNumber::before{
+    content: "사업자 번호 ";
+    color: black;
+}
+
+.txt-company.location::before{
+    content: "주소 ";
+    color: black;
+}
+
+.txt-company.location::after{
+    display: none;
+}
