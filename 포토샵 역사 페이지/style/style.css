@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
 
 body{
-  background-color: #616161;
+  background-color: #222;
 }
 .con-title {
   position: relative;
@@ -39,8 +39,145 @@ body{
   z-index: -1;
 }
 
+.con-main{
+  padding: 100px 0;
+}
+
 .wrapper-main{
   max-width: 1200px;
-  background-color: antiquewhite;
   margin: auto;
+}
+
+.wraper-history{
+  margin: 0 -40px;
+}
+
+.list-historyItem{
+  width: 50%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-bottom: -130px;
+  position: relative;
+}
+
+.list-historyItem::before{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  margin: 0 -5px;
+  background-color: RGB(28, 144, 255);
+  transform: translateY(50%);
+}
+
+.list-historyItem:nth-of-type(odd)::before {
+  right: 0;
+}
+
+.list-historyItem:nth-of-type(even)::before {
+  left: 0;
+}
+
+.list-historyItem:nth-of-type(even) {
+  margin-left: auto;
+}
+
+
+.list-historyItem::after{
+  content: ' ';
+  background-color: #232323;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  margin: auto -15px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 6px solid dodgerblue;
+}
+
+.list-historyItem:nth-of-type(odd)::after {
+  right: 0;
+}
+
+.list-historyItem:nth-of-type(even)::after {
+  left: 0;
+}
+
+.left::before {
+  right: 0;
+}
+
+.right::before{
+  left: 0;
+}
+
+.con-history {
+  position: relative;
+  min-height: 350px;
+  color: white;
+  background-color: #111;
+  padding: 0 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.con-history::before{
+  content: ' ';
+  background-color: #111;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto -15px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+}
+
+.img-history{
+  width: 115px;
+  margin-top: -60px;
+}
+
+.list-historyItem:last-child::before{
+  display: none;
+}
+
+.list-historyItem:nth-last-child(2)::before{
+  transform: translateY(15%);
+}
+
+.con-history.right .img-history {
+  float: right;
+}
+
+.con-history.left .txt-version,
+.con-history.left .txt-year{
+  text-align: right;
+}
+
+.txt-year{
+  padding: 45px 0 30px 0;
+  color: #1c90ff;
+  font-size: 65px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 800;
+}
+
+.list-update{
+  width: 100%;
+  bottom: 0;
+  background-color: #000;
+  border-radius: 25px 25px 0 0;
+  padding: 35px;
+  box-sizing: border-box;
+  color: #4a4a4a;
+  position: absolute;
+}
+
+.list-updateItem{
+  list-style: disc;
+  font-size: 18px;
+  list-style-position:inside;
 }
