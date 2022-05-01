@@ -116,11 +116,12 @@ body{
 
 .con-history {
   position: relative;
-  min-height: 350px;
-  color: white;
-  background-color: #111;
+  min-height: 300px;
   padding: 0 30px;
+  border-radius: 20px;
+  background-color: #111;
   font-family: 'Noto Sans KR', sans-serif;
+  color: white;
 }
 
 .con-history::before{
@@ -145,7 +146,7 @@ body{
 }
 
 .list-historyItem:nth-last-child(2)::before{
-  transform: translateY(15%);
+  transform: translateY(25%);
 }
 
 .con-history.right .img-history {
@@ -155,6 +156,7 @@ body{
 .con-history.left .txt-version,
 .con-history.left .txt-year{
   text-align: right;
+  padding-top: 0;
 }
 
 .txt-year{
@@ -165,19 +167,26 @@ body{
   font-weight: 800;
 }
 
+.txt-version{
+  margin-bottom: 40px;
+}
 .list-update{
   width: 100%;
-  bottom: 0;
-  background-color: #000;
-  border-radius: 25px 25px 0 0;
   padding: 35px;
+  margin: auto;
   box-sizing: border-box;
+  border-radius: 25px 25px 0 0;
   color: #4a4a4a;
-  position: absolute;
+  background-color: #000;
+
 }
 
 .list-updateItem{
   list-style: disc;
   font-size: 18px;
   list-style-position:inside;
+}
+
+.list-updateItem::marker {
+  font-size: 1.2em;
 }
