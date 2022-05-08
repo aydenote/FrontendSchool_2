@@ -232,6 +232,10 @@
   border-bottom: 1px solid #C4C4C4;
 }
 
+.wrap-info {
+  overflow: hidden;
+}
+
 .txt-companyName {
   display: inline-block;
   vertical-align: top;
