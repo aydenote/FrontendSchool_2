@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0509</title>
+  </head>
+  <body>
+    <script>
+      let data = [
+        {
+          반: 1,
+          번: 1,
+          이름: "호준",
+          중간고사점수: 55,
+        },
+        {
+          반: 1,
+          번: 2,
+          이름: "길동",
+          중간고사점수: 60,
+        },
+        {
+          반: 1,
+          번: 3,
+          이름: "영희",
+          중간고사점수: 30,
+        },
+        {
+          반: 1,
+          번: 4,
+          이름: "철수",
+          중간고사점수: 20,
+        },
+        {
+          반: 1,
+          번: 5,
+          이름: "규리",
+          중간고사점수: 100,
+        },
+      ];
+
+      // 1. 중간고사 점수를 하나의 array로 만들어주세요.
+      let arr1 = [];
+      //   console.log(data.map(x => x.중간고사점수))
+      //   console.log(data.map((x) => arr1.push(x.중간고사점수)));
+      for (let i = 0; i < data.length; i++) {
+        arr1.push(data[i]["중간고사점수"]);
+      }
+      console.log(arr1);
+
+      // 2. 이름과 중간고사 점수를 하나의 array로 만들어주세요.
+      let arr2 = [];
+      //   arr2 = data.map((x) => x.이름);
+      //   console.log(arr2);
+      for (let j = 0; j < data.length; j++) {
+        arr2.push(`${data[j]["이름"]} : ${data[j]["중간고사점수"]}`);
+      }
+      console.log(arr2);
+      //  console.log(data.map((x) => [x.이름, x.중간고사점수]));
+
+      // (나아가기) 3. 중간고사점수의 표준편차를 구해주세요. 또 어떻게 구하는 것이 효율적일지 고민해주세요.
+      //   1) 평균 구하기
+      //   2) 편차 구하기 (각 요소별 평균 값으로부터 얼마나 먼지)
+      //   3) 분산 구하기 (편차의 제곱을 다 더한값 / length )
+      //   4) 표준편차 구하기 (분산에 루트 math.sqrt(분산))
+      let arr3 = [];
+      let arr4 = [];
+      let sum = 0;
+      let avg = 0;
+      let bunsan = 0;
+      let pyeoncha = 0;
+
+      for (let k = 0; k < data.length; k++) {
+        arr3.push(data[k]["중간고사점수"]);
+      }
+      sum = arr3.reduce((a, b) => a + b);
+      avg = sum / arr3.length;
+
+      arr3.forEach((n) => arr4.push(n - avg));
+      sum = 0;
+      arr4.forEach((n) => (sum += Math.pow(n, 2)));
+      bunsan = sum / arr4.length;
+      pyeoncha = Math.sqrt(bunsan);
+      console.log(pyeoncha);
+    </script>
+  </body>
+</html>
