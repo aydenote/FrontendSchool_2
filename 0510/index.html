@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0510</title>
+  </head>
+  <body>
+    <script>
+      let data = [
+        {
+          반: 1,
+          번: 1,
+          이름: "호준",
+          중간고사점수: 55,
+        },
+        {
+          반: 1,
+          번: 2,
+          이름: "길동",
+          중간고사점수: 60,
+        },
+        {
+          반: 1,
+          번: 3,
+          이름: "영희",
+          중간고사점수: 30,
+        },
+        {
+          반: 1,
+          번: 4,
+          이름: "철수",
+          중간고사점수: 20,
+        },
+        {
+          반: 1,
+          번: 5,
+          이름: "규리",
+          중간고사점수: 100,
+        },
+      ];
+      //화살표 함수로 되어 있는 것을 일반 함수로 바꿔주세요.
+
+      // console.log(data.map(x => x.중간고사점수))
+      console.log(
+        data.map(function (x) {
+          return x.중간고사점수;
+        })
+      );
+      // console.log(data.map((x) => [x.이름, x.중간고사점수]));
+      console.log(
+        data.map(function (x) {
+          return {
+            이름: x.이름,
+            중간고사점수: x.중간고사점수,
+          };
+        })
+      );
+
+      let data2 = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+      ];
+      //   let newData = data2.map((a) => a.map((n) => n * 2));
+      let newData = data2.map(function (a) {
+        return a.map(function (n) {
+          return n * 2;
+        });
+      });
+      console.log(newData);
+
+      //   1. `[10, 20, 30, 40]` 값의 평균을 구하는 **함수**를 만들어주세요.
+      function avg(...num) {
+        let sum = 0;
+        for (let x of num) {
+          sum += x;
+        }
+        return sum / num.length;
+      }
+      console.log(avg(10, 20, 30, 40));
+
+      //   2. (나아가기) 숫자단위 콤마를 찍는 **함수**를 만들어주세요.
+      //   1000000000 -> 1,000,000,000
+      function comma(str) {
+        if (str.length <= 3) {
+          return str;
+        } else {
+          return (
+            comma(str.slice(0, str.length - 3)) +
+            "," +
+            str.slice(str.length - 3)
+          );
+        }
+      }
+      console.log(comma("1000000000"));
+    </script>
+  </body>
+</html>
