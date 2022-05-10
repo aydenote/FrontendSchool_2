@@ -7,11 +7,6 @@
     <title>0504과제</title>
   </head>
   <body>
-    <!-- 1. user의 id와 name, age를 가진 새로운 array를 만들어주세요.
-    2. user의 age가 27 이상인 사람의 데이터를 id만 추출해주세요. 
-    3. id가 6271fd40e30856d15651c60c 인 사람의 name만 추출해주세요. 
-    4. (더 나아가기) user의 평균 나이를 구해주세요. 
-    5. (더 나아가기) user의 성비를 구해주세요. -->
     <script>
       let user = [
         {
@@ -72,26 +67,33 @@
           registered: "2016-09-19T10:00:38 -09:00",
         },
       ];
-      //   1번
-      let arr = user.map((user) => user);
-      console.log(user);
+      // 1. user의 id와 name, age를 가진 새로운 array를 만들어주세요.
+      let arr = user.map((i) => {
+        return {
+          _id: i._id,
+          name: i.name,
+          age: i.age,
+        };
+      });
       console.log(arr);
-      //   2번
+
+      // 2. user의 age가 27 이상인 사람의 데이터를 id만 추출해주세요.
       let result2 = arr
         .filter((user) => user.age >= 27)
         .map((user) => user._id);
       console.log(result2);
-      //   3번
+
+      // 3. id가 6271fd40e30856d15651c60c 인 사람의 name만 추출해주세요.
       let result3 = arr
         .filter((user) => user._id === "6271fd40e30856d15651c60c")
         .map((user) => user.name);
       console.log(result3);
-      //   4번
-      let result4 = user.map((user) => user.age);
-      let sum = result4.reduce((a, b) => a + b);
-      console.log(sum / result4.length);
 
-      //    5번
+      // 4. (더 나아가기) user의 평균 나이를 구해주세요.
+      let result4 = user.map((user) => user.age).reduce((a, b) => a + b);
+      console.log(result4 / user.length);
+
+      // 5. (더 나아가기) user의 성비를 구해주세요.
       let male = user.filter((user) => user.gender === "male");
       let female = user.filter((user) => user.gender === "female");
       console.log(`남성 여성 성비는 ${male.length} : ${female.length} 입니다.`);
