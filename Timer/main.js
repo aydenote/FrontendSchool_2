@@ -14,8 +14,11 @@ startBtn.addEventListener("click", ()=>{
         TimerStart.innerText= String(count-=1).padStart(2,"0");
         console.log(TimerStart.innerText);
     };
-    setInterval(function() {
+    let interval=setInterval(function() {
         setTimer();
+        if(count=="00"){
+            clearInterval(interval) 
+        }
     }, 1000);
     startBtn.setAttribute("src", "./img/pause.svg");
 })
