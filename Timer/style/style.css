@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+}
+
+.con-main{
+    position: relative;
+    width: 1280px;
+    height: 100vh;
+    background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+    margin:auto;
+}
+
+.img-logo{
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+    padding-top: 72px;
+    width: 244px;
+    height: 48px;   
+}
+
+.con-timer{
+    width: 400px;
+    height: 360px;
+    margin: auto;
+    background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+    /* shadow */
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+    border-radius: 16px;
+}
+
+.txt-title{
+    width: 73px;
+    height: 29px;
+    margin: auto;
+    padding-top: 48px;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.line{
+    content: ' ';
+    margin: 23px auto 33px auto;
+
+    width: 312px;
+    height: 1px;
+    left: 484px;
+    top: 280px;
+    background: #3D538A;
+}
+
+.con-time{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    text-align: center;
+}
+
+.time{
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background: linear-gradient(314.28deg, #304577 0%, #4C65A0 83%);
+    border: 1px solid #354971;
+    border-radius: 4px;
+    
+    /* Bold_40px */
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80px;
+    color: #FFFFFF;   
+}
+
+.con-hour::after{
+    content: ":";
+    position: absolute;
+    width: 6px;
+    height: 26px;
+    left: 586px;
+    top: 358px;
+    color: #8198D0;
+    font-size: 26px;
+}
+
+.con-min::after{
+    content: ":";
+    position: absolute;
+    width: 6px;
+    height: 26px;
+    left: 688px;
+    top: 358px;
+    color: #8198D0;
+    font-size: 26px;
+}
+
+.txt-time{
+    margin-bottom: 4px;
+    /* Bold_12px */
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    /* light */
+    color: #A5B6EE;
+}
+
+.con-btns{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
